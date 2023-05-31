@@ -1,0 +1,269 @@
+@keyframes highlight-bounce {
+    0% {
+      transform: scale(1);
+      background-color: green;
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: yellow;
+    }
+    100% {
+      transform: scale(1);
+      background-color: green;
+    }
+  }
+  .green-text {
+    color: green;
+  } 
+
+.red-text {
+    color: red;
+  }
+  
+@keyframes highlight {
+    0% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: white;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
+  
+  @keyframes vibrate {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .highlight-animation {
+    animation: highlight 1s infinite;
+  }
+  
+  .vibrate-animation {
+    animation: vibrate 0.1s 8;
+  }
+  
+body{
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.config {
+    font-family: Cambria, serif;
+    font-size: 20px;
+    margin: auto;
+    background: rgb(236, 114, 13);
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 370px;
+  }
+
+
+.btn
+{
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 2s;
+    outline: none;
+    border: none;
+}
+*::selection
+{
+    background-color: lightgreen;
+    color: darkblue;
+}
+.btn:hover
+{
+    transition: background-color 2s;
+}
+#btn1
+{
+    background-color: lightgreen;
+}
+#btn1:hover
+{
+    background-color: darkgreen;
+}
+#btn2
+{
+    background-color: lightblue;
+}
+#btn2:hover
+{
+    background-color: darkblue;
+}
+#btn3
+{
+    background-color: red;
+}
+#btn3:hover
+{
+    background-color: orange;
+}
+
+.flex-container {
+    
+    display:  flex;
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    
+}
+
+.flex-item {
+    font-size: 100;
+    background: rgba(3, 6, 37, 0.822);
+    padding: 10px;
+    width: calc(10% - 20px); /* Ajustez la largeur en fonction du nombre de colonnes */
+    height: auto; /* Ajustez la hauteur en fonction de vos besoins */
+    margin: 5px; /* Ajustez la marge pour rapprocher les images */
+    line-height: 0; /* Réglez la hauteur de ligne à 0 pour supprimer l'espace supplémentaire */
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    gap: 0.6em;
+    perspective: 1000px; /* Ajout de la perspective pour l'effet 3D */
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease-out;
+  }
+  
+.flex-item:hover {
+    transform: rotateY(180deg); /* Rotation de 180 degrés au survol */
+}
+  
+.flex-row{
+    margin-bottom: 10px;
+    justify-content: center;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bordure-arrondie {
+    border-radius: 10px;
+    background-color:black;
+  }
+
+  .borderline{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  .bordercss{
+    display: flex;
+
+  }
+
+.toolbar {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.toolbar button {
+    background-color: #231052;
+    width: 350px;
+    height: 50px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.titre{
+    text-align: center;
+    color: orange;
+}
+.toolbar2 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.toolbar3 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+ 
+#score{
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#life{
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#timer{
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#timer2{
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
