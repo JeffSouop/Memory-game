@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Memory Game</title>
+    </head>
+    <body id="body">
+        <header >
+             <ul id="list" class="flex-container" style="align-items: center; text-align: center; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 350%;">
+
+            </ul>
+        </header>
+
+        <div class="config">
+            <div class="toolbar">
+                <br><br>
+                <div  id="timer2"></div>
+                <div  id="timer"><input id="valeurs_temps" placeholder="Entrer le temps de jeu" style="background-color: white; font-style: italic; width: 350px; height: 50px"></div><br><br>
+                <div id="life">  Nombre de tentative : 7</div>
+                <div  id="score">Score : 0 </div>
+                <label for= "size" style="font-size: 80%;"><input type="text" id="size" placeholder="Entrer le nombre de cartes" style="background-color: white; font-style: italic;width: 350px; height: 50px"></label>
+                <br><br>
+                <label for="timer" style="font-size: 80%;"><input type="text" id="time" placeholder="Entrer le temps d'attente" style="background-color: white; font-style: italic; width: 350px; height: 50px;"></label>
+                <br><br>
+                <button id="bouton" onclick="jouer()"> JOUER </button>
+                <br><br><br>
+            </div>
+        </div>
+        <script type="text/javascript" src="tp.js"></script>
+    </body>
+</html>
